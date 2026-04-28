@@ -3,6 +3,7 @@ using Base.Threads
 module Radiomics
 
 include("utils/utils.jl")
+include("filters/haar_wavelet.jl")
 include("glcm_features.jl")
 include("first_order_features.jl")
 include("shape_2D_features.jl")

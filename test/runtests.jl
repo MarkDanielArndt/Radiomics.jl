@@ -330,3 +330,5 @@ mktempdir() do tmpdir
     end
 
 end
+
+include("test_filters.jl")

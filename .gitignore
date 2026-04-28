@@ -27,3 +27,6 @@ docs/site/
 # environment.
 Manifest.toml
 .local/
+
+# VS Code workspace settings (machine-specific)
+.vscode/
