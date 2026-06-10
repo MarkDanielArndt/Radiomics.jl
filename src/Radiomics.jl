@@ -6,6 +6,7 @@ using JSON3
 using TOML
 
 include("utils/utils.jl")
+include("filters/wavelet_filter.jl")
 include("glcm_features.jl")
 include("first_order_features.jl")
 include("shape_2D_features.jl")
