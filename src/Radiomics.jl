@@ -704,7 +704,12 @@ end
 
     spacing = [1.0, 1.0, 1.0]
 
-    @compile_workload begin        
+    @compile_workload begin
+        # Haar wavelet filter (3D and 2D)
+        haar_wavelet_filter(img_small)
+        haar_wavelet_filter(img_small; subbands=["LLL", "HHH"])
+        haar_wavelet_filter(img_small_2d)
+
         # 2D
         extract_radiomic_features(
             img_small_2d, mask_small_2d, spacing;
